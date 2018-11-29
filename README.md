@@ -4,9 +4,7 @@ Collect normal stuffs, or something is weird, or maybe nothing
 
 #### Kafka - Zookeeper
 
-1:
-- New consumer uses `--bootstrap-server <kafka>` not working, but old style `--zookeeper <zk>` works
--> Fix: remove /brokers from `zookeeper` container
+**1. New consumer uses `--bootstrap-server <kafka>` not working, but old style `--zookeeper <zk>` works -> Fix: remove /brokers from `zookeeper` container**
 ? How to do that
 - Stop and remove `kafka` container: docker stop <kafka_container_name> | docker rm <kafka_container_name>
 - Enter `zookeeper` container: docker exec -it <zk_c_n> su
